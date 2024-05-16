@@ -1,0 +1,5 @@
+일반적인 for문
+
+for(int i = 0; i < 10; 1++) {
+system.oiut.println(i);
+}
