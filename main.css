@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #000000;
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 70%;
+  height: 70px;
+}
+
+.log {
+  display: flex;
+  gap: 10px;
+}
+
+.all li:hover {
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  display: flex;
+}
+
+.main a {
+  display: block;
+  transition: 0.3s;
+}
+
+.main > ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.main > ul > li {
+  z-index: 1;
+}
+
+.main > ul > li > a {
+  height: 50px;
+  padding: 0 40px;
+  font-size: 17px;
+  line-height: 50px;
+}
+
+.main > ul > li:hover > a {
+  background-color: #484848;
+  color: #ffffff;
+}
+
+.main > ul > li > ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.main > ul > li > ul a {
+  text-align: center;
+  line-height: 40px;
+  background-color: #474747;
+  color: #f8f8f8;
+}
+
+.main > ul > li > ul a:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.main > ul > li:hover > ul {
+  display: block;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8dea85;
+  height: 70px;
+}
+
+.section input[id*="slide"] {
+  display: none;
+}
+.section .slidewrap {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+  padding: 0;
+}
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all.5s;
+}
+.section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+.section .slidelist > li > a img {
+  width: 100%;
+  height: 600px;
+}
